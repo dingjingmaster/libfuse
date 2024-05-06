@@ -159,6 +159,9 @@ int main(int argc, char *argv[])
 	options.contents = strdup("Hello World!\n");
 
 	/* Parse options */
+    // args 传入的命令行参数
+    // options 解析结果
+    // option_spec
 	if (fuse_opt_parse(&args, &options, option_spec, NULL) == -1)
 		return 1;
 
